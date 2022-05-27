@@ -6,6 +6,7 @@
     --primary-white-color: #ffffff;
     --primary-button-color: #F5F4FA;
     --button-color: #188CE8;
+    --background-footer: #2F303A;
     --address-text-color: rgba(255, 255, 255, 0.6);
 }
 
@@ -82,6 +83,7 @@ body {
     color: var(--title-text-color);
 }
 .feature-list .title {
+    font-size: 14px;
     font-weight: 700;
     line-height: 1.14;
     text-transform: uppercase;
@@ -111,9 +113,11 @@ body {
 
 /*--Button--*/
 .button {
-    cursor: pointer;
-    height: 26px;
+    display: inline-block;
+    border: 1px solid transparent;
     border-radius: 4px;
+    cursor: pointer;
+    text-align: center;
 }
 .button.primary {
     font-size: 16px;
@@ -130,6 +134,7 @@ body {
     background-color: var(--button-color);
 }
 .button.secondary {
+    height: 38px;
     color: var(--title-text-color);
     background-color: var(--primary-button-color);
 }
@@ -141,23 +146,27 @@ body {
 
 /*------Portfolio-------*/
 /*-----Projects------*/
-.projects-title .link {
+.projects .link {
+    text-decoration: none;
+}
+.link .projects-title {
     font-weight: 700;
     font-size: 18px;
     line-height: 2;
     letter-spacing: 0.06em;
-    text-decoration: none;
     color: var(--title-text-color);
 }
-.text .link {
+.link .text {
     font-weight: 400;
     font-size: 16px;
     line-height: 1.87;
-    text-decoration: none;
     color: var(--primary-text-color);
 }
 
 /*--Footer--*/
+.footer {
+    background-color: var(--background-footer);
+}
 .logo-footer {
     font-family: 'Raleway', sans-serif;
     font-weight: 700;
@@ -171,15 +180,15 @@ body {
 }
 
 /*--Address--*/
-.address-nav {
-    line-height: 1.71;
-}
-.address-nav .link:first-child  {
-    color: var(--primary-white-color);
-}
-.address-nav .link {
+.address {
     text-decoration: none;
     font-style: normal;
+    line-height: 1.71;
+    color: var(--primary-white-color);
+    
+}
+.address-link {
+    text-decoration: none;
     color: var(--address-text-color);
 }
 
